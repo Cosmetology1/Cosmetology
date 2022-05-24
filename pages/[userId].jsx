@@ -20,8 +20,6 @@ import {
 } from "semantic-ui-react";
 import axios from "axios";
 
-import {baseURL} from "../server/util/baseURL"
-
 const ProfilePage = ({ stylist, profile }) => {
   
   const [stylists, setStylists] = useState([]);

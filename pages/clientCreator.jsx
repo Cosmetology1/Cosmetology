@@ -10,7 +10,6 @@ import {
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import catchErrors from "./util/catchErrors";
-// import { setToken } from "./util/auth";
 
 import Router from "next/router";
 
@@ -553,7 +552,6 @@ export default ClientCreator;
 // import { useState, useRef, useEffect, Component } from "react";
 // import axios from "axios";
 // import catchErrors from "./util/catchErrors";
-// import { setToken } from "./util/auth";
 
 // import Router from "next/router";
 

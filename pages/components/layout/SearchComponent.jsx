@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { List,  Search, Item } from "semantic-ui-react";
+import { List, Search, Item } from "semantic-ui-react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import Router from "next/router";
-import {baseURL} from "../server/util/baseURL"
+import { baseURL } from "../../../server/util/baseURL";
 let cancel;
 
 const SearchComponent = () => {
@@ -64,7 +64,7 @@ const SearchComponent = () => {
   );
 };
 
-const ResultRenderer = ({ _id,  firstName, lastName, stylistName }) => {
+const ResultRenderer = ({ _id, firstName, lastName, stylistName }) => {
   return (
     <List key={_id}>
       <List.Item>
