@@ -1,7 +1,7 @@
 import Router from "next/router";
 import cookie from "js-cookie";
 
-export const baseURL = `https://cosmetology.vercel.app/`;
+export const baseURL = `https://westmec-cosmetology.herokuapp.com/`;
 
 export const logoutUser = (email) => {
   cookie.set("stylistEmail", email);
