@@ -14,7 +14,7 @@ import {
 } from "semantic-ui-react";
 import Link from "next/link";
 import { logoutUser } from "../../../server/util/auth"
-import Search from "./SearchComponent";
+// import Search from "./SearchComponent";
 
 //whole lotta semantic and a whole lotta random stuff from me
 //I also used the sidebar instead of the buttons because it looks better since there are more pages.
@@ -218,7 +218,7 @@ function NormNavbar({ stylist }) {
         <Grid.Column floated="left" width={4}>
           <Sticky>
             <Segment basic>
-              <Search />
+              {/* <Search /> */}
             </Segment>
           </Sticky>
         </Grid.Column>

@@ -1,7 +1,7 @@
 import Router from "next/router";
 import cookie from "js-cookie";
 
-export const baseURL = `https://cosmetology-apujanpqw-cosmotologywm-gmailcom.vercel.app/`;
+export const baseURL = `https://cosmetology.vercel.app/`;
 
 export const logoutUser = (email) => {
   cookie.set("stylistEmail", email); 
