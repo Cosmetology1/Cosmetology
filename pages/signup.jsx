@@ -200,7 +200,7 @@ const Signup = () => {
 
   const getStylists = async () => {
     try {
-      const results = await axios.get(`http://localhost:3001/api/v1/stylists`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/stylists`);
       setStylists(results.data);
     } catch (error) {
       console.log(`Error at getStylists ${error}`);

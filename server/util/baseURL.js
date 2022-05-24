@@ -1,1 +1,1 @@
-export const baseURL = `http://localhost:${process.env.PORT || 3001}`;
+export const baseURL = `https://cosmetology.vercel.app/`;

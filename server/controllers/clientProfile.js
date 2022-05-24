@@ -77,7 +77,7 @@ const createClient = async (req, res) => {
     const getStylists = async () => {
       try {
         const results = await axios.get(
-          `http://localhost:3001/api/v1/stylists`
+          `https://cosmetology.vercel.app/api/v1/stylists`
         );
         const stylists = results.data;
         console.log(`Stylists: ${stylists}`);

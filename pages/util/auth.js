@@ -4,7 +4,7 @@ import cookie from "js-cookie";
 export const baseURL = `https://cosmetology.vercel.app/`;
 
 export const logoutUser = (email) => {
-  cookie.set("stylistEmail", email); 
+  cookie.set("stylistEmail", email);
   cookie.remove("token");
   Router.push("/login");
   Router.reload();

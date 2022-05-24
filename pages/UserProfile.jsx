@@ -50,7 +50,7 @@ const UserProfile = ({ stylist }) => {
 
   const getStylists = async () => {
     try {
-      const results = await axios.get(`http://localhost:3001/api/v1/stylists`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/stylists`);
       setStylists(results.data);
     } catch (error) {
       console.log(`Error at getStylists ${error}`);
@@ -114,7 +114,7 @@ const UserProfile = ({ stylist }) => {
 
   const getClients = async () => {
     try {
-      const results = await axios.get(`http://localhost:3001/api/v1/client`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/client`);
       setClients(results.data);
       console.log(`clients ${clients}`);
     } catch (error) {
@@ -154,7 +154,7 @@ const UserProfile = ({ stylist }) => {
     console.log(`Here is the text: ${text}`);
     try {
       const res = await axios.post(
-        `http://localhost:3001/api/v1/UserRoute/sort`,
+        `https://cosmetology.vercel.app/api/v1/UserRoute/sort`,
         {
           text,
         }

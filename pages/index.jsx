@@ -47,7 +47,7 @@ const Index = ({ stylist, client }) => {
 
   const getClients = async () => {
     try {
-      const results = await axios.get(`http://localhost:3001/api/v1/client`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/client`);
       setClients(results.data);
     } catch (error) {
       console.log(`Error at getClients ${error}`);
@@ -76,7 +76,7 @@ const Index = ({ stylist, client }) => {
   const sortClient = async (text) => {
     console.log(`Here is the text: ${text}`);
     try {
-      const res = await axios.post(`http://localhost:3001/api/v1/index`, {
+      const res = await axios.post(`https://cosmetology.vercel.app/api/v1/index`, {
         text,
       });
 

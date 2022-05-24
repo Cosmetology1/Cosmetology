@@ -56,12 +56,12 @@ const List = ({ stylist }) => {
   const handleSubmit = async (string) => {
     console.log(`Tester String: ${string}`, userIds);
     try {
-      const res = await axios.post(`http://localhost:3001/api/v1/List`, {
+      const res = await axios.post(`https://cosmetology.vercel.app/api/v1/List`, {
         userIds,
       });
       setDeleteUser(false);
 
-      const results = await axios.get(`http://localhost:3001/api/v1/stylists`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/stylists`);
       setStylists(results.data);
     } catch (error) {
       console.log(`Error at handleSubmit: ${error}`);
@@ -72,7 +72,7 @@ const List = ({ stylist }) => {
   const [sortType, setSortType] = useState("");
   const initGetStylists = async () => {
     try {
-      const results = await axios.get(`http://localhost:3001/api/v1/stylists`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/stylists`);
       setStylists(results.data);
     } catch (error) {
       console.log(`Error at initGetStylists ${error}`);
@@ -80,7 +80,7 @@ const List = ({ stylist }) => {
   };
   const getClients = async () => {
     try {
-      const results = await axios.get(`http://localhost:3001/api/v1/client`);
+      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/client`);
       setClients(results.data);
     } catch (error) {
       console.log(`Error at getClients: ${error}`);
@@ -112,7 +112,7 @@ const List = ({ stylist }) => {
   const sortStylist = async (text) => {
     console.log(`Here is the text: ${text}`);
     try {
-      const res = await axios.post(`http://localhost:3001/api/v1/List/sort`, {
+      const res = await axios.post(`https://cosmetology.vercel.app/api/v1/List/sort`, {
         text,
       });
 
@@ -133,7 +133,7 @@ const List = ({ stylist }) => {
     console.log(`Here is the text: ${text}`);
     try {
       const res = await axios.post(
-        `http://localhost:3001/api/v1/List/sort2`,
+        `https://cosmetology.vercel.app/api/v1/List/sort2`,
         {
           text,
         }
