@@ -5,7 +5,7 @@ const StylistModel = require("../model/StylistModel");
 // const bcrypt = require("bcryptjs");
 const isEmail = require("validator/lib/isEmail");
 const axios = require("axios");
-import { baseURL } from "../server/util/baseURL";
+const baseURL = `http://localhost:3001/`;
 
 
 // let stylists = [];

@@ -1,1 +1,1 @@
-export const baseURL = `https://cosmetology-apujanpqw-cosmotologywm-gmailcom.vercel.app`;
+export const baseURL = `https://cosmetology.vercel.app/`;

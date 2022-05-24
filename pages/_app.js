@@ -6,6 +6,8 @@ import { redirectUser } from "../server/util/auth";
 import { destroyCookie, parseCookies } from "nookies";
 import axios from "axios";
 
+const baseURL = `http://localhost:3001/`;
+
 function MyApp({ Component, pageProps }) {
   return (
     <Layout stylist={pageProps.stylist}>

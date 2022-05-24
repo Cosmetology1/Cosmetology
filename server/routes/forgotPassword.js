@@ -1,6 +1,6 @@
 const crypto =  require('crypto');
 const User =  require('../model/StylistModel');
-import { baseURL } from "../server/util/baseURL";
+const baseURL = `http://localhost:3001/`;
 
 
 require('dotenv').config();
