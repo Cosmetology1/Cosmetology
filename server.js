@@ -3,6 +3,7 @@ const express = require("express");
 const { connectDB } = require("./server/util/connect");
 const cloudinary = require("cloudinary").v2;
 const fileUpload = require("express-fileupload");
+const cors = require("cors")
 // const morgan  = require('morgan')
 
 const bodyParser = require("body-parser");
@@ -50,6 +51,7 @@ app.use(fileUpload({ useTempFiles: true }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(cors())
 // app.use("/auth", authRouter);
 //* ROUTERS */
 // const profileRoutes = require("./server/routes/profileRoute");
