@@ -1,2 +1,1 @@
-# Cosmetology
-West Mec Cosmetology Website
+ReadMe

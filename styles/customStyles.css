@@ -1,0 +1,495 @@
+.navBar {
+  background: #353434 !important;
+  margin-right: 1.5rem !important;
+}
+
+.vertSidebar{
+  position: fixed !important;
+  height: 100% !important;
+}
+
+.ui.container {
+  margin-left: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 2, 2, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc8b00;
+}
+
+.welcomeItem {
+  color: white !important;
+}
+
+.clientList {
+  background: #ffb81c !important;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.cListHeader {
+  background: white !important;
+}
+
+.StudentGrid {
+  margin: 0 auto !important;
+  position: absolute !important;
+
+  background: #ffb81c;
+}
+
+.background-video {
+  position: absolute;
+  width: 150%;
+  left: 50%;
+  top: 50%;
+  height: 150%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.blackBackground {
+  background-color: black !important;
+}
+
+.loginForm {
+  background: #ffffff8c !important;
+}
+
+.studentRow:hover {
+  background: #6ea1ff;
+}
+
+.studentColumn:hover {
+  color: #6ea1ff;
+}
+studentColumnNoColor {
+  left: 12% !important;
+}
+
+.studentColumn {
+  left: 12%;
+}
+
+a.item :hover {
+  background-color: transparent;
+}
+
+.loginComponent {
+  min-width: 50vw !important;
+  max-width: 50vw !important;
+  margin-top: 12rem !important;
+}
+
+.yearSemesterCenter {
+  text-align: center;
+  max-width: min-content;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ui.modal.scrolling{
+margin: 0 auto;
+align-self: center;
+align-content: center;
+text-align: center;
+}
+
+
+.studentListName {
+  position: relative !important;
+  left: 8%;
+  cursor: pointer !important;
+
+}
+
+.listLink {
+  cursor: pointer !important;
+}
+
+.ui.modal {
+  margin-top: 0 !important;
+  }
+
+.ui.page.modals.transition.visible {
+  display: flex !important;
+}
+
+
+@media screen and (min-width: 800px) {
+  .studentListPic {
+    position: absolute !important;
+    right: 80%;
+    bottom: -41%;
+    width: 28%;
+    border: black solid 2px;
+    border-radius: 50px;
+  }
+
+
+  .studentListName {
+    position: relative !important;
+    left: 40%;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .studentListPic {
+    position: absolute !important;
+    bottom: -4%;
+    width: 35% !important;
+    height: 35% !important;
+    right: 76%;
+    max-width: 35% !important;
+    max-height: 35% !important;
+  }
+
+  .studentListName {
+    position: relative !important;
+    left: 25% !important;
+  }
+}
+
+.mini {
+  margin-left: 30%;
+}
+
+.mini2 {
+  margin-left: 44.5%;
+}
+
+.mini3 {
+  padding-left: 42% !important;
+}
+
+@media (max-width: 821px) {
+  .mini {
+    margin-left: 15%;
+  }
+
+  .mini2 {
+    margin-left: 43%;
+  }
+
+  .mini3 {
+    padding-left: 38% !important;
+  }
+
+  div.eight.wide.column.roz {
+    margin-right: 50%;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  div.seven.wide.column.roz2 {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  div.row.roz3 {
+    margin-left: 50% !important;
+  }
+
+  div.row.roz4 {
+    padding-left: 38% !important;
+  }
+}
+
+.clientListRow {
+  position: relative !important;
+  text-align: center;
+  justify-content: center;
+  left: 35%;
+  overflow: scroll hidden;
+}
+
+.clientListRow:hover {
+  background-color: #6ea1ff;
+  justify-content: space-between;
+}
+
+.listLink:hover {
+  color: #6ea1ff;
+}
+
+.clientListColumn:hover {
+  color: #6ea1ff;
+}
+
+@media (max-width: 821px) {
+}
+
+.Indexcolumn {
+  width: 2rem;
+  justify-content: center;
+}
+
+.orangeBackground {
+  background: url("https://i.postimg.cc/0NDfCYjj/orange-kid.jpg");
+  background-size: 300%;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+.otherOrangeBackground {
+  background: rgba(253, 224, 158, 0.13);
+  background-size: cover;
+  backdrop-filter: blur(20px) !important;
+}
+
+.testimonial{
+  margin-right: 10rem;
+  font-size: medium;
+  justify-self: center;
+}
+
+.testHeader{
+  margin-right: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollContainer{
+    width: 20% !important;
+    overflow:hidden;
+  }
+}
+
+
+/* @media screen and (min-width: 800px) {
+  .scrollContainer{
+    overflow: hidden;
+    justify-items: center !important;
+    justify-content: center !important;
+    /* background-color: #edd390 !important; */
+    /* border: black solid 1px !important; */
+    /* width: 20% !important; */
+  /* }
+} */ 
+
+
+
+
+
+.quantity-button.quantity-up {
+  position: absolute !important;
+  height: 50% !important;
+  top: 0 !important;
+  color: red !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+
+.scrollText{
+    -moz-transform: translateX(60%);
+    -webkit-transform: translateX(60%);
+    transform: translateX(60%);
+    
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+    display: flex;
+    align-content: space-between;
+    white-space: nowrap;
+}
+
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(60%); }
+  to { -webkit-transform: translateX(-60%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(60%);
+    -webkit-transform: translateX(60%);
+    transform: translateX(60%);
+  }
+  to {
+    -moz-transform: translateX(-60%);
+    -webkit-transform: translateX(-60%);
+    transform: translateX(-60%);
+  }
+}
+
+.containeindex {
+  border-bottom: 10px solid orange;
+  border-top: 10px solid orange;
+  background: orange;
+  color: black;
+  overflow-y: scroll;
+
+  height: 26.8rem;
+  overflow-x: hidden;
+}
+
+.indexCenter {
+  justify-content: center;
+}
+
+#changeImg:hover{
+  border: rgb(255, 0, 0) 5px solid !important;
+  background-image: url("https://i.postimg.cc/G3M0HdCg/rc-Lx-ML7-Ri.png") !important;
+}
+
+div.ui.page.modals.dimmer.transition.visible.active {
+  height: 100vw;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+.forgotPassword{
+    color: white;
+    cursor: pointer;
+  
+}
+.forgotPassword2{
+  position: relative !important;
+  justify-content: center;
+  left: 200px;
+  
+
+}
+.forgotPassword3{
+  position: relative !important;
+  top: 25px;
+  justify-content: center;
+  left: 200px;
+  
+  
+
+}
+.forgotPassword:hover{
+color: orange;
+}
+
+.tableindex {
+  position: relative;
+}
+
+.ui.segment:first-child{
+  margin-top: 0 !important;
+}
+
+
+@media screen and (min-height: 800px) {
+  .tableindex {
+    top: 50%;
+  }
+  .containeindex {
+    border-bottom: 10px solid orange;
+    height: 35rem;
+    background: orange;
+    color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 55rem;
+  }
+  .indexClientInfo {
+    border-bottom: 10px solid orange;
+    border-top: 10px solid orange;
+    height: 100rem;
+    background: orange;
+    color: rgb(0, 0, 0);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    position: absolute  !important;
+  top: 1000% !important;
+  
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .clientCreatorHandheld {
+    overflow: auto;
+  }
+  .clientCreatorDivider {
+    display: none;
+  }
+}
+
+.Back2Top {
+  font-size: 60px;
+  position: relative;
+  top: 18px;
+  z-index: 100000000000000000000000000000000000000000;
+}
+
+.Back2TopText {
+  font-size: 60px;
+  position: relative;
+  top: 18px;
+}
+
+.studentListPic {
+  position: absolute !important;
+  right: 81.8%;
+  bottom: -30%;
+  width: 6rem !important;
+  height: 6rem !important;
+  border: rgb(0, 0, 0) solid 2px;
+  border-radius: 50px;
+}
+
+.listAvatar {
+  width: 4rem !important;
+  height: 4rem !important;
+  border: rgb(0, 0, 0) solid 2px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.avatar {
+  position: absolute !important;
+  right: 81.8%;
+  bottom: -35%;
+  width: 6rem !important;
+  height: 6rem !important;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+  border: rgb(0, 0, 0) solid 2px;
+  background-color: #fff !important;
+}
+
+.profileAvatar {
+  width: 27rem !important;
+  height: 27rem !important;
+  max-height: 27rem;
+  min-height: 27rem;
+  background-color: rgb(255, 255, 255) !important;
+
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+  border: rgb(0, 0, 0) solid 2px;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  .profileAvatar{
+    height: 15rem !important;
+    width: 15rem !important;
+    min-height: 15rem !important;
+    min-width: 15rem !important;
+    max-height: 15rem !important;
+    max-width: 15rem !important;
+  }
+}
+
+.ui.grid>.row{
+  height: auto  !important;
+}
