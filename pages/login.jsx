@@ -8,10 +8,12 @@ import {
   Header,
 } from "semantic-ui-react";
 import catchErrors from "./util/catchErrors";
-import axios from "axios";
+import axios from "axios"; 
 import { setToken } from "../server/util/auth";
 import Cookies from "js-cookie";
 import Link from "next/link";
+import { baseURL } from "../server/util/baseURL";
+
 
 const Login = ({ history, location }) => {
   const [stylist, setStylist] = useState({
@@ -54,7 +56,7 @@ const Login = ({ history, location }) => {
     setFormLoading(true);
 
     try {
-      const res = await axios.post("/api/v1/user/login", { email, password });
+      const res = await axios.post(`${baseURL}/api/v1/user/login`, { email, password });
       setToken(res.data);
       console.log("User Logged In");
     } catch (error) {

@@ -8,7 +8,7 @@ export const logoutUser = (email) => {
   cookie.remove("token");
   Router.push("/login");
   Router.reload();
-};
+}; 
 
 export const setToken = (token) => {
   cookie.set("token", token);
