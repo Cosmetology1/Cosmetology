@@ -369,3 +369,13 @@ Daniel: fixed all errors with building except trace for bcrypt, can't figure out
 Reid: trying to debug to npm run build
 
 Joshua absent
+
+5/24/22
+Jason Enciso: attempting to fix vercel
+
+Daniel: changed all urls to baseURL and switched to vercel link, still cannot get it to work
+
+Reid: helped Daniel
+
+Joshua: absent
+
