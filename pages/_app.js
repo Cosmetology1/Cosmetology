@@ -4,7 +4,6 @@ import "semantic-ui-css/semantic.min.css";
 import "../styles/customStyles.css";
 import { redirectUser } from "../server/util/auth";
 import { destroyCookie, parseCookies } from "nookies";
-import { baseURL } from "../server/util/auth";
 import axios from "axios";
 
 function MyApp({ Component, pageProps }) {

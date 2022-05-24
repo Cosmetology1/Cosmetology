@@ -3,7 +3,7 @@ import { List,  Search, Item } from "semantic-ui-react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import Router from "next/router";
-import { baseURL } from "../../../server/util/auth";
+import {baseURL} from "../server/util/baseURL"
 let cancel;
 
 const SearchComponent = () => {

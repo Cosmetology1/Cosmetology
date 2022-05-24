@@ -14,6 +14,8 @@ import DragNDrop from "./components/common/DragNDrop";
 import axios from "axios";
 import catchErrors from "./util/catchErrors";
 import { setToken } from "../server/util/auth";
+import { baseURL } from "../server/util/baseURL";
+
 
 const Signup = () => {
   const [stylists, setStylists] = useState([]);
@@ -200,7 +202,7 @@ const Signup = () => {
 
   const getStylists = async () => {
     try {
-      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/stylists`);
+      const results = await axios.get(`${baseURL}/api/v1/stylists`);
       setStylists(results.data);
     } catch (error) {
       console.log(`Error at getStylists ${error}`);

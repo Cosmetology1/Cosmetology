@@ -5,6 +5,8 @@ const StylistModel = require("../model/StylistModel");
 // const bcrypt = require("bcryptjs");
 const isEmail = require("validator/lib/isEmail");
 const axios = require("axios");
+import { baseURL } from "../server/util/baseURL";
+
 
 // let stylists = [];
 const createClient = async (req, res) => {
@@ -77,7 +79,7 @@ const createClient = async (req, res) => {
     const getStylists = async () => {
       try {
         const results = await axios.get(
-          `https://cosmetology.vercel.app/api/v1/stylists`
+          `${baseURL}/api/v1/stylists`
         );
         const stylists = results.data;
         console.log(`Stylists: ${stylists}`);

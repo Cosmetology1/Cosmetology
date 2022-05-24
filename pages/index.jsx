@@ -2,7 +2,8 @@ import React from "react";
 import axios from "axios";
 // import { parseCookies } from "nookies";
 import { useEffect, useState } from "react";
-// import { baseURL } from "./util/auth";
+import {baseURL} from "../server/util/baseURL"
+
 
 import {
   Grid,
@@ -39,6 +40,7 @@ const Index = ({ stylist, client }) => {
   const [option, setOption] = useState("");
   const [sortType, setSortType] = useState("");
 
+
   const [state, dispatch] = React.useReducer(exampleReducer, {
     open: false,
     dimmer: undefined,
@@ -47,7 +49,7 @@ const Index = ({ stylist, client }) => {
 
   const getClients = async () => {
     try {
-      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/client`);
+      const results = await axios.get(`${baseURL}/api/v1/client`);
       setClients(results.data);
     } catch (error) {
       console.log(`Error at getClients ${error}`);
@@ -76,7 +78,7 @@ const Index = ({ stylist, client }) => {
   const sortClient = async (text) => {
     console.log(`Here is the text: ${text}`);
     try {
-      const res = await axios.post(`https://cosmetology.vercel.app/api/v1/index`, {
+      const res = await axios.post(`${baseURL}/api/v1/index`, {
         text,
       });
 

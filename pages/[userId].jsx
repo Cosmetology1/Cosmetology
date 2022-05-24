@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { parseCookies } from "nookies";
 // import Cookies from "js-cookie";
 import Link from "next/link";
+import { baseURL } from "../server/util/baseURL";
 
 import {
   Grid,
@@ -18,6 +19,8 @@ import {
   Form,
 } from "semantic-ui-react";
 import axios from "axios";
+
+import {baseURL} from "../server/util/baseURL"
 
 const ProfilePage = ({ stylist, profile }) => {
   
@@ -51,7 +54,7 @@ const ProfilePage = ({ stylist, profile }) => {
   let user = stylist.userId;
   const getStylists = async () => {
     try {
-      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/stylists`);
+      const results = await axios.get(`${baseURL}/api/v1/stylists`);
       setStylists(results.data);
     } catch (error) {
       console.log(`Error at getStylists ${error}`);
@@ -114,7 +117,7 @@ const ProfilePage = ({ stylist, profile }) => {
 
   const getClients = async () => {
     try {
-      const results = await axios.get(`https://cosmetology.vercel.app/api/v1/client`);
+      const results = await axios.get(`${baseURL}/api/v1/client`);
       setClients(results.data);
     } catch (error) {
       console.log(`Error at getClients ${error}`);
@@ -156,7 +159,7 @@ const ProfilePage = ({ stylist, profile }) => {
     console.log(`Here is the text: ${text}`);
     try {
       const res = await axios.post(
-        `https://cosmetology.vercel.app/api/v1/UserRoute/sort`,
+        `${baseURL}/api/v1/UserRoute/sort`,
         {
           text,
         }
@@ -179,7 +182,7 @@ const ProfilePage = ({ stylist, profile }) => {
   const sortClient = async (text) => {
     console.log(`Here is the text: ${text}`);
     try {
-      const res = await axios.post(`https://cosmetology.vercel.app/api/v1/UserRoute/sort2`, {
+      const res = await axios.post(`${baseURL}/api/v1/UserRoute/sort2`, {
         text,
       });
 
@@ -696,7 +699,7 @@ ProfilePage.getInitialProps = async (ctx) => {
     console.log(`userId: ${userId}`);
     const { token } = parseCookies(ctx);
     const res = await axios.get(
-      `https://cosmetology.vercel.app/api/v1/profile/${userId}`,
+      `${baseURL}/api/v1/profile/${userId}`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
