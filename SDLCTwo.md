@@ -262,3 +262,9 @@ EAD
 - Cleveland: Netlify attempts
 
 - Abdi: Heroku attempts with website
+
+5/24/2022
+
+- Cleveland: Tried with cors errors, thanks to Daniel finished the leftover 1% of routes
+
+- Abdi: Also tried with cors errors
