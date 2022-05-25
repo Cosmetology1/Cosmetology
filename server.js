@@ -3,7 +3,8 @@ const express = require("express");
 const { connectDB } = require("./server/util/connect");
 const cloudinary = require("cloudinary").v2;
 const fileUpload = require("express-fileupload");
-const cors = require("cors")
+const cors = require("cors");
+app.use(cors());
 // const morgan  = require('morgan')
 
 const bodyParser = require("body-parser");
@@ -35,7 +36,7 @@ const next = require("next");
 const dev = process.env.NODE_ENV !== "production";
 
 //! there are giant error warnings that pop up when in dev.
-const nextApp = next({ dev }); 
+const nextApp = next({ dev });
 
 //! Handler is a built in next router that will handle ALL requests made to the server
 const handler = nextApp.getRequestHandler();
@@ -50,8 +51,7 @@ app.use(fileUpload({ useTempFiles: true }));
 // app.use(morgan('short'))
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(cors())
+app.use(bodyParser.urlencoded({ extended: false }));
 // app.use("/auth", authRouter);
 //* ROUTERS */
 // const profileRoutes = require("./server/routes/profileRoute");
@@ -62,8 +62,8 @@ const clientRoute = require("./server/routes/clientRoute");
 const profileRoute = require("./server/routes/profileRoute");
 // const forgotRoutes = require("./server/routes/forgotPassword")
 const searchRoutes = require("./server/routes/searchRoutes");
-const listRoutes = require("./server/routes/listRoute")
-const indexRoute = require("./server/routes/indexRoute")
+const listRoutes = require("./server/routes/listRoute");
+const indexRoute = require("./server/routes/indexRoute");
 
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/auth", authRoute);
@@ -75,7 +75,7 @@ app.use("/api/v1/UserRoute", userRoute);
 // app.use("forgot", forgotRoutes);
 app.use("/api/v1/search", searchRoutes);
 app.use("/api/v1/List", listRoutes);
-app.use("/api/v1/index", indexRoute)
+app.use("/api/v1/index", indexRoute);
 
 //*SOCKETS */
 
