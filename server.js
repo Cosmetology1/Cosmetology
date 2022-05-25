@@ -43,7 +43,12 @@ const handler = nextApp.getRequestHandler();
 //* MIDDLEWARES *//
 // const { authMiddleware } = require("./server/middleware/auth");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    credentials: true
+  })
+);
 app.use(express.json());
 app.use(fileUpload({ useTempFiles: true }));
 
