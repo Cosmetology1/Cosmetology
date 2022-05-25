@@ -4,7 +4,6 @@ const { connectDB } = require("./server/util/connect");
 const cloudinary = require("cloudinary").v2;
 const fileUpload = require("express-fileupload");
 const cors = require("cors");
-app.use(cors());
 // const morgan  = require('morgan')
 
 const bodyParser = require("body-parser");
@@ -44,6 +43,7 @@ const handler = nextApp.getRequestHandler();
 //* MIDDLEWARES *//
 // const { authMiddleware } = require("./server/middleware/auth");
 
+app.use(cors());
 app.use(express.json());
 app.use(fileUpload({ useTempFiles: true }));
 
